@@ -3,6 +3,8 @@
     <head>
         <title>HTML5</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
         <style>
             table {
                 border: 2px solid black;
@@ -25,12 +27,19 @@
                 color: dark;
             }
 
-            #code {
+            .text {
+                font-weight: normal;
+                color: dark;
+                width: 50%;
+
+            }
+			#code {
                 font-weight: bold;
                 color: dark;
                 width: 50%;
 
             }
+
         </style>
     </head>
     <body>
@@ -42,37 +51,66 @@
             <li><a href="image0.html">Image</a></li>
             <li><a href="image1.html">Image pixels</a></li>
             <li><a href="image2.html">Image responsive</a></li>
-            <li><a href="Table.html">Table</a></li>
+            <li><a href="table.html">Table</a></li>
             <li><a href="form.html">Form</a></li>
+            <li><a href="../src1/form.html">Form - Datalist</a></li> 
+            <li><a href="../src1/links/links0.html">Links</a></li>
+            <li><a href="../src1/links/links1.html">Links in the same page</a></li>
             <li><a href="style0.html">Style</a></li>
             <li><a href="style1.html">Style with style</a></li>
             <li><a href="style2.html">Style with css</a></li>
             <li><a href="size.html">Div</a></li>
+            <li><a href="id.html">id</a></li>
             <li><a href="font.html">Font</a></li>
             <li><a href="border.html">Border</a></li>
-            <li><a href="div_span.html">Span</a></li>        
-          
+            <li><a href="div_span.html">Span</a></li>
+            
+            <li><a href="../src1/descendant.html">CSS Selectors: All descendants</a></li> 
+            <li><a href="../src1/child.html">CSS Selectors: Only childs</a></li> 
+            <li><a href="../src1/attribute.html">CSS Selectors: Attribute</a></li>  
+            <li><a href="../src1/before.html">CSS Selectors: before</a></li>
+            <li><a href="../src1/multiple.html">CSS Selectors: multiple</a></li> 
+            <li><a href="../src1/hover.html">CSS Selectors: pseudo-classes: Hover</a></li> 
+            <li><a href="../src1/selection.html">CSS Selectors: selection</a></li> 
+            <li><a href="../src1/flexbox.html">CSS Layouts: Flexbox</a></li>
+            <li><a href="../src1/grid.html">CSS Layouts: Grid</a></li>          
+            <li><a href="../src1/bootstrap.html">CSS library: bootstrap</a></li> 
+            <li><a href="../src1/alert.html">CSS library: bootstrap - Alert</a></li> 
+            <li><a href="../src1/buttons.html">CSS library: bootstrap - buttons</a></li> 
+            <li><a href="../src1/columns0.html">CSS library: bootstrap - columns</a></li> 
+            <li><a href="../src1/columns1.html">CSS library: bootstrap - columns 1</a></li> 
+            <li><a href="../src1/columns2.html">CSS library: bootstrap - columns 2</a></li> 
+            <li><a href="../src1/print.html">Responsive Design: Media Queries: print</a></li> 
+            <li><a href="../src1/responsive0.html">Responsive Design: @media (min-width: 500px)</a></li> 
+            <li><a href="../src1/responsive1.html">Responsive Design: Texto funcion ancho de pantalla</a></li> 
+            <li><a href="../src1/variables/variables.html">Variables: SASS Syntactically Awesome Style Sheets</a></li>
+            <li><a href="../src1/nesting/nesting.html">Variables: SASS - Nesting</a></li>  
+            <li><a href="../src1/inheritance/inheritance.html">Variables: SASS - Inheritance</a></li>
+                     
         </ul>
         <h1>HTML5:</h1> Hyper Text Markup Language
 
     	</br>
     	</br>
-    	<textarea id="code" name="code">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;title&gt;Simple HTML document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Hello World!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;                             
+    	
+    	<textarea id="code" name="code" rows="11">
+	        &lt;!DOCTYPE html&gt;
+	        &lt;html lang=&quot;en&quot;&gt;
+	        &lt;head&gt;
+	        &lt;title&gt;Simple HTML document&lt;/title&gt;
+	        <meta charset="utf-8">
+	        &lt;/head&gt;
+	        &lt;body&gt;
+	        &lt;h1&gt;Hello World!&lt;/h1&gt;
+	        &lt;/body&gt;
+	        &lt;/html&gt;    	               
 		</textarea>	
-
+ 
+	       
 
         <h1>Tags:</h1>
         <p>This section contains a complete list of standard tags belonging to the latest HTML5 and XHTML 1.1 specifications.</br>
-         All the tags are listed alphabetically.</p>
+        </p>
         <table>
             <tr>
                 <th>Tag</th>
@@ -202,8 +240,446 @@
                             </tr>
 						</table>
 					</div>
+					<h2 id="metadata-tags">Metadata Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;base&gt;</span></code></td>
+								<td>Defines the base URL for all linked objects on a page.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;basefont&gt;</span></code></td>
+								<td>(Obsolete) Specifies the base font for a page.</td>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;link&gt;</span></code></td>
+								<td>Defines the relationship between the current document and an external resource.</td>
+							</tr>							
+							<tr>
+								<td><code><span class="tag">&lt;meta&gt;</span></code></td>
+								<td>Provides structured metadata about the document content.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;style&gt;</span></code></td>
+								<td>Inserts style information (commonly CSS) into the head of a document.</td>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;title&gt;</span></code></td>
+								<td>Defines a title for the document.</td>
+							</tr>													    
+						</table>
+					</div>
+					<h2 id="form-tags">Form Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;button&gt;</span></code></td>
+								<td>Creates a clickable button.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;datalist&gt;</span><span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a set of pre-defined options for an <code><span class="tag">&lt;input&gt;</span></code> element.</td>
+                            </tr>
+                            <tr>
+								<td><code><span class="tag">&lt;fieldset&gt;</span></code></td>
+								<td>Specifies a set of related form fields.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;form&gt;</span></code></td>
+								<td>Defines an HTML form for user input.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;input&gt;</span></code></td>
+								<td>Defines an input control.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;keygen&gt;</span> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a control for generating a public-private key pair.</td>
+                            </tr>
+                            <tr>
+								<td><code><span class="tag">&lt;label&gt;</span></code></td>
+								<td>Defines a label for an <code><span class="tag">&lt;input&gt;</span></code> control.</td>
+							</tr>							
+							<tr>
+								<td><code><span class="tag">&lt;legend&gt;</span></code></td>
+								<td>Defines a caption for a <code><span class="tag">&lt;fieldset&gt;</span></code> element.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;meter&gt;</span> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a scalar measurement within a known range.</td>
+                            </tr>
+							<tr>
+								<td><code><span class="tag">&lt;optgroup&gt;</span></code></td>
+								<td>Defines a group of related options in a selection list.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;option&gt;</span></code></td>
+								<td>Defines an option in a selection list.</td>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;select&gt;</span></code></td>
+								<td>Defines a selection list within a form.</td>
+							</tr>
+                            <tr>
+								<td><code><span class="tag">&lt;textarea&gt;</span></code></td>
+								<td>Defines a multi-line text input control (text area).</td>
+							</tr>												
+						</table>
+					</div>	
+					<h2 id="formatting-tags">Formatting Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;abbr&gt;</span></code></td>
+								<td>Defines an abbreviated form of a longer word or phrase.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;acronym&gt;</span></code></td>
+								<td>Defines an acronym.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;address&gt;</span></code></td>
+								<td>Specifies the author's contact information.</td>
 
-
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;b&gt;</span></code></td>
+								<td>Displays text in a bold style.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;bdi&gt;</span><span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents text that is isolated from its surrounding for the purposes of bidirectional text formatting.</td>
+                            </tr>
+							<tr>
+								<td><code><span class="tag">&lt;bdo&gt;</span></code></td>
+								<td>Overrides the current text direction.</td>
+							</tr>                            
+							<tr>
+								<td><code><span class="tag">&lt;big&gt;</span></code></td>
+								<td>displays text in a large size.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;blockquote&gt;</span></code></td>
+								<td>Defines a long quotation.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;center&gt;</span></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a>  Align contents in the center of the enclosing block.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;cite&gt;</span></code></td>
+								<td>Indicates a citation or reference to another source.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;code&gt;</span></code></td>
+								<td>Specifies text as computer code.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;del&gt;</span></code></td>
+								<td>Specifies a block of deleted text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;dfn&gt;</span></code></td>
+								<td>Specifies a definition.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;em&gt;</span></code></td>
+								<td>Specifies emphasized text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;font&gt;</span></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Defines font, color, and size for text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;i&gt;</span></code></td>
+								<td>Displays text in an italic style.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;ins&gt;</span></code></td>
+								<td>Defines a block of text that has been inserted into a document.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;kbd&gt;</span></code></td>
+								<td>Specifies text as keyboard input.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;mark&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents text highlighted for reference purposes.</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;output&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents the result of a calculation.</td>
+                            </tr>
+							<tr>
+								<td><code><span class="tag">&lt;pre&gt;</span></code></td>
+								<td>Defines a block of preformatted text.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;progress&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents the completion progress of a task.</td>
+                            </tr>
+							<tr>
+								<td><code><span class="tag">&lt;q&gt;</span><code></td>
+								<td>Defines a short inline quotation.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;rp&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Provides fall-back parenthesis for browsers that that don't support ruby annotations.</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;rt&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Defines the pronunciation of character presented in a ruby annotations.</td>
+                            </tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;ruby&gt;</span>< <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a ruby annotation.</td>
+                            </tr>
+							<tr>
+								<td><code><span class="tag">&lt;s&gt;</span></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Displays text in strikethrough style.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;samp&gt;</span></code></td>
+								<td>Specifies text as sample output from a computer program.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;small&gt;</span></code></td>
+								<td>Displays text in a smaller size.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;strike&gt;</span></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Displays text in strikethrough style.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;strong&gt;</span></code></td>
+								<td>Indicate strongly emphasized text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;sub&gt;</span></code></td>
+								<td>Defines subscripted text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;sup&gt;</span></code></td>
+								<td>Defines superscripted text.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;tt&gt;</span></code></td>
+								<td>Displays text in a teletype style.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;u&gt;</span></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Displays text with an underline.</td>
+							</tr>
+							<tr>
+								<td><code><span class="tag">&lt;var&gt;</span></code></td>
+								<td>Defines a variable.</td>
+							</tr>
+                            <tr>
+                                <td><code><span class="tag">&lt;wbr&gt;</span><span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a line break opportunity.</td>
+                            </tr>
+						</table>
+					</div>
+					<h2 id="list-tags">List Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+                            <tr>
+								<td><code><a href="html-dd-tag.php">&lt;dd&gt;</a></code></td>
+								<td>Specifies a definition for a term in a definition list.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-dir-tag.php">&lt;dir&gt;</a></code></td>
+								<td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Defines a directory list.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-dl-tag.php">&lt;dl&gt;</a></code></td>
+								<td>Defines a definition list.</td>
+							</tr>														
+							<tr>
+								<td><code><a href="html-dt-tag.php">&lt;dt&gt;</a></code></td>
+								<td>Defines a term (an item) in a definition list.</td>
+							</tr>	
+                            <tr>
+								<td><code><a href="html-li-tag.php">&lt;li&gt;</a></code></td>
+								<td>Defines a list item.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-ol-tag.php">&lt;ol&gt;</a></code></td>
+								<td>Defines an ordered list.</td>
+							</tr>						
+							<tr>
+                                <td><code><a href="html-menu-tag.php">&lt;menu&gt;</a></code></td>
+                                <td>Represents a list of commands.</td>
+                            </tr>
+                            <tr>
+								<td><code><a href="html-ul-tag.php">&lt;ul&gt;</a></code></td>
+								<td>Defines an unordered list.</td>
+							</tr>
+						</table>
+					</div>
+					<h2 id="table-tags">Table Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>							
+							<tr>
+								<td><code><a href="html-caption-tag.php">&lt;caption&gt;</a></code></td>
+								<td>Defines the title of a table.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-col-tag.php">&lt;col&gt;</a></code></td>
+								<td>Defines attribute values for one or more columns in a table.</td>
+							</tr>
+							<tr>
+								<td><code><a href="html-colgroup-tag.php">&lt;colgroup&gt;</a></code></td>
+								<td>Specifies attributes for multiple columns in a table.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-table-tag.php">&lt;table&gt;</a></code></td>
+								<td>Defines a data table.</td>
+							</tr>							
+							<tr>
+								<td><code><a href="html-tbody-tag.php">&lt;tbody&gt;</a></code></td>
+								<td>Groups a set of rows defining the main body of the table data.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-td-tag.php">&lt;td&gt;</a></code></td>
+								<td>Defines a cell in a table.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-tfoot-tag.php">&lt;tfoot&gt;</a></code></td>
+								<td>Groups a set of rows summarizing the columns of the table.</td>
+							</tr>
+							<tr>
+                                <td><code><a href="html-thead-tag.php">&lt;thead&gt;</a></code></td>
+                                <td>Groups a set of rows that describes the column labels of a table.</td>
+                            </tr>
+                            <tr>
+								<td><code><a href="html-th-tag.php">&lt;th&gt;</a></code></td>
+								<td>Defines a header cell in a table.</td>
+							</tr>							
+							<tr>
+								<td><code><a href="html-tr-tag.php">&lt;tr&gt;</a></code></td>
+								<td>Defines a row of cells in a table.</td>
+							</tr>
+						</table>
+					</div>
+					<h2 id="scripting-tags">Scripting Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+                            <tr>
+                                <td><code><a href="html-noscript-tag.php">&lt;noscript&gt;</a></code></td>
+                                <td>Defines alternative content to display when the browser doesn't support scripting.</td>
+                            </tr>						    
+							<tr>
+								<td><code><a href="html-script-tag.php">&lt;script&gt;</a></code></td>
+								<td>Places script in the document for client-side processing.</td>
+							</tr>
+						</table>
+					</div>
+					<h2 id="embedded-content-tags">Embedded Content Tags</h2>
+					<div class="shadow">
+						<table class="data">
+							<tr>
+								<th>Tag</th>
+								<th>Description</th>
+							</tr>
+                            <tr>
+                                <td><code><a href="html-applet-tag.php">&lt;applet&gt;</a></code></td>
+                                <td><a href="../definitions.php#obsolete" class="obsolete" title="Not supported in HTML5">Obsolete</a> Embeds a Java applet (mini Java applications) on the page. Use the <code><a href="html-object-tag.php">&lt;object&gt;</a></code> element instead.</td>
+                            </tr>
+                            <tr>
+								<td><code><a href="html-area-tag.php">&lt;area&gt;</a></code></td>
+								<td>Defines a specific area within an image map.</td>
+							</tr>							
+                            <tr>
+                                <td><code><a href="html5-audio-tag.php">&lt;audio&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Embeds a sound, or an audio stream in an HTML document.</td>
+                            </tr>
+                            <tr>
+                                <td><code><a href="html5-canvas-tag.php">&lt;canvas&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Defines a region in the document, which can be used to draw graphics on the fly via scripting (usually JavaScript).</td>
+                            </tr>
+                            <tr>
+                                <td><code><a href="html5-embed-tag.php">&lt;embed&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Embeds external application, typically multimedia content like audio or video into an HTML document.</td>
+                            </tr>	
+                            <tr>
+                                <td><code><a href="html5-figcaption-tag.php">&lt;figcaption&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Defines a caption or legend for a figure.</td>
+                            </tr>
+                            <tr>
+                                <td><code><a href="html5-figure-tag.php">&lt;figure&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a figure illustrated as part of the document.</td>
+                            </tr>
+							<tr>
+								<td><code><a href="html-frame-tag.php">&lt;frame&gt;</a></code></td>
+								<td>Defines a single frame within a frameset.</td>
+							</tr>
+							<tr>
+								<td><code><a href="html-frameset-tag.php">&lt;frameset&gt;</a></code></td>
+								<td>Defines a collection of frames or other frameset.</td>
+							</tr>						
+							<tr>
+								<td><code><a href="html-iframe-tag.php">&lt;iframe&gt;</a></code></td>
+								<td>Displays a URL in an inline frame.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-img-tag.php">&lt;img&gt;</a></code></td>
+								<td>Displays an inline image.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-map-tag.php">&lt;map&gt;</a></code></td>
+								<td>Defines a client-side image-map.</td>
+							</tr>
+                            <tr>
+								<td><code><a href="html-noframes-tag.php">&lt;noframes&gt;</a></code></td>
+								<td>Defines an alternate content that displays in browsers that do not support frames.</td>
+							</tr>
+							<tr>
+								<td><code><a href="html-object-tag.php">&lt;object&gt;</a></code></td>
+								<td>Defines an embedded object.</td>
+							</tr>
+							<tr>
+								<td><code><a href="html-param-tag.php">&lt;param&gt;</a></code></td>
+								<td>Defines a parameter for an object or applet element.</td>
+							</tr>
+                            <tr>
+                                <td><code><a href="html5-source-tag.php">&lt;source&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Defines alternative media resources for the media elements like <code><a href="html5-audio-tag.php">&lt;audio&gt;</a></code> or <code><a href="html5-video-tag.php">&lt;video&gt;</a></code>.</td>
+                            </tr>
+                            <tr>
+                                <td><code><a href="html5-time-tag.php">&lt;time&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Represents a time and/or date.</td>
+                            </tr>
+                            <tr>
+                                <td><code><a href="html5-video-tag.php">&lt;video&gt;</a> <span class="html5-badge" title="New in HTML5"></span></code></td>
+                                <td>Embeds video content in an HTML document.</td>
+                            </tr>
+						</table>
+					</div>
 	</br>
     </br>
     </body>
