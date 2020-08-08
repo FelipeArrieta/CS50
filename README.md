@@ -1,2 +1,2 @@
 # CS50
-Some HTML5 examples
+Here you maay find some HTML5 examples.
